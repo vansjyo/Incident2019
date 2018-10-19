@@ -46,6 +46,10 @@ body {
     color: #FFD039;
 }
 
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
 @media only screen and (max-width: 1400px) {
 
 body {
