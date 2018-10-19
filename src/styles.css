@@ -6,6 +6,46 @@ body {
     margin-top: 120px !important;
 }
 
+.iwhite {
+    background-color: #fffff8;
+}
+
+.iwhite-text {
+    color: #fffff8;
+}
+
+.ipink {
+    background-color: #EB3E4A;
+}
+
+.ipink-text {
+    color: #EB3E4A;
+}
+
+.iblue {
+    background-color: #21BEDA;
+}
+
+.iblue-text {
+    color: #21BEDA;
+}
+
+.iblack {
+    background-color: #201D32;
+}
+
+.iblack-text {
+    color: #201D32;
+}
+
+.iyellow {
+    background-color: #FFD039;
+}
+
+.iyellow-text {
+    color: #FFD039;
+}
+
 @media only screen and (max-width: 1400px) {
 
 body {
