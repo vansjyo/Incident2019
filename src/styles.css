@@ -4,14 +4,15 @@
 body {
     font-size: 1em;
     margin-top: 120px !important;
+    background-color: #FFFFF8;
 }
 
 .iwhite {
-    background-color: #fffff8;
+    background-color: #FFFFF8;
 }
 
 .iwhite-text {
-    color: #fffff8;
+    color: #FFFFF8;
 }
 
 .ipink {
