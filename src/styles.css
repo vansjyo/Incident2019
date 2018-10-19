@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+body {
+    font-size: 1em;
+    margin-top: 120px !important;
+}
+
+@media only screen and (max-width: 1400px) {
+
+body {
+    margin-top: 80px !important;
+}
+
+}
