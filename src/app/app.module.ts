@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 const appRoutes: Routes = [
   {
@@ -20,7 +21,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    LandingComponent
+    LandingComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,

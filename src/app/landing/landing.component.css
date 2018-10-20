@@ -27,11 +27,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50vw;
-    filter: brightness(80%);
-}
-
-.landing-img:hover {
-    filter: brightness(100%);
 }
 
 .landing-desc {
@@ -111,7 +106,6 @@
     position: static;
     transform: translate(0, 6px);
     width: 100%;
-    filter: brightness(100%);
 }
 
 .landing-play {
