@@ -7,13 +7,19 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { EventsComponent } from './events/events.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent,
     data: { title: 'Incident 2019' }
-  }
+  },
+  {
+    path: 'events',
+    component: EventsComponent,
+    data: { title: 'Incident 2019 - Events' }
+  },
 ];
 
 @NgModule({
@@ -22,7 +28,8 @@ const appRoutes: Routes = [
     HomeComponent,
     HeaderComponent,
     LandingComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

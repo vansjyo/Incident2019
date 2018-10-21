@@ -53,6 +53,19 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Hack - Angular doesn't support styling for dynamically added html */
+.events-listing a .icon *, .events-listing a .icon img {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.events-listing a .icon i {
+    font-size: 6em;
+}
+
+
 @media only screen and (max-width: 1400px) {
 
 body {
