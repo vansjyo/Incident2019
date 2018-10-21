@@ -95,6 +95,11 @@ function getCategoryNameFromHash(hash) {
 }
 
 function handleHashChange() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
   const hash = location.hash.replace('#', '');
   if (hash === '') {
     instance.list = CATEGORIES;
