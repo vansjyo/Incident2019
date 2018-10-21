@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+body {
+    font-size: 1em;
+    margin-top: 120px !important;
+    background-color: #FFFFF8;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.iwhite {
+    background-color: #FFFFF8;
+}
+
+.iwhite-text {
+    color: #FFFFF8;
+}
+
+.ipink {
+    background-color: #EB3E4A;
+}
+
+.ipink-text {
+    color: #EB3E4A;
+}
+
+.iblue {
+    background-color: #21BEDA;
+}
+
+.iblue-text {
+    color: #21BEDA;
+}
+
+.iblack {
+    background-color: #201D32;
+}
+
+.iblack-text {
+    color: #201D32;
+}
+
+.iyellow {
+    background-color: #FFD039;
+}
+
+.iyellow-text {
+    color: #FFD039;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hack - Angular doesn't support styling for dynamically added html */
+.events-listing a .icon *, .events-listing a .icon img {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.events-listing a .icon i {
+    font-size: 6em;
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+body {
+    margin-top: 80px !important;
+}
+
+}
