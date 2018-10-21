@@ -21,6 +21,10 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  isHome() {
+    return window.location.pathname === '/';
+  }
+
   ngOnInit() {
     $('.header i').click(toggleMenu);
   }

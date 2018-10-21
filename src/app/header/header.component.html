@@ -2,7 +2,8 @@
   <i class="material-icons iwhite-text">menu</i>
   <img src="assets/images/inci_logo.png"/>
   <ul class="nav-links">
-    <li><a href="#!" class="iwhite-text">EVENTS</a></li>
+    <li *ngIf="!isHome()"><a href="/" class="iwhite-text">HOME</a></li>
+    <li><a href="events" class="iwhite-text">EVENTS</a></li>
     <li><a href="#!" class="iwhite-text">SPONSORS</a></li>
     <li><a href="#!" class="iwhite-text">iCARE</a></li>
     <li><a href="#!" class="iwhite-text">ABOUT</a></li>
