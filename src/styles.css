@@ -3,34 +3,25 @@
 
 body {
     font-size: 1em;
-    margin-top: 120px !important;
-    background-color: #FFFFF8;
+    background-color: #F8F8FF;
     width: 100vw;
     overflow-x: hidden;
 }
 
 .iwhite {
-    background-color: #FFFFF8;
+    background-color: #F8F8FF;
 }
 
 .iwhite-text {
-    color: #FFFFF8;
-}
-
-.ipink {
-    background-color: #EB3E4A;
-}
-
-.ipink-text {
-    color: #EB3E4A;
+    color: #F8F8FF;
 }
 
 .iblue {
-    background-color: #21BEDA;
+    background-color: #002D54;
 }
 
 .iblue-text {
-    color: #21BEDA;
+    color: #002D54;
 }
 
 .iblack {
@@ -41,16 +32,19 @@ body {
     color: #201D32;
 }
 
-.iyellow {
-    background-color: #FFD039;
-}
-
-.iyellow-text {
-    color: #FFD039;
-}
-
 .poppins {
     font-family: 'Poppins', sans-serif;
+}
+
+.mcontainer {
+    margin-left: 176px;
+    margin-right: 176px;
+    width: calc(100% - 352px);
+}
+
+.row, .col {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Hack - Angular doesn't support styling for dynamically added html */
@@ -69,7 +63,27 @@ body {
 @media only screen and (max-width: 1400px) {
 
 body {
+    /* margin-top: 80px !important; */
+}
+
+.mcontainer {
+    margin-left: 152px;
+    margin-right: 152px;
+    width: calc(100% - 304px);
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+body {
     margin-top: 80px !important;
+}
+
+.mcontainer {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc(100% - 32px);
 }
 
 }

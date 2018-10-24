@@ -1,8 +1,9 @@
-.landing-logo {
-    position: absolute;
-    top: 30%;
-    left: 176px;
-    z-index: 2;
+.landing-container {
+    display: table-cell;
+    height: 100vh;
+    width: 100%;
+    padding: 0 176px 0 176px;
+    vertical-align: middle;
 }
 
 .landing-logo .landing-inci {
@@ -22,18 +23,10 @@
 }
 
 .landing-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50vw;
+    width: 100%;
 }
 
 .landing-desc {
-    position: absolute;
-    bottom: 20%;
-    right: 176px;
-    width: 34vw;
     font-size: 1.6em;
     font-weight: 700;
     padding: 0 8px 0 8px;
@@ -48,7 +41,8 @@
     height: 0;
     border-style: solid;
     border-width: 0 0 300px 100vw;
-    border-color: transparent transparent #EB3E4A transparent;
+    border-color: transparent transparent #002D54 transparent;
+    z-index: -1;
 }
 
 .landing-backdrop {
@@ -59,6 +53,10 @@
 }
 
 @media only screen and (max-width: 1400px) {
+
+.landing-container {
+    padding: 0 152px 0 152px;
+}
 
 .landing-logo {
     left: 152px;
@@ -89,13 +87,19 @@
 
 @media only screen and (max-width: 800px) {
 
+.landing-container {
+    display: block;
+    padding: 0 16px 0 16px;
+    height: auto;
+}
+
 .landing-logo {
     position: static;
     padding: 16% 0 16% 0;
 }
 
 .landing-logo .landing-inci {
-    font-size: 5em;
+    font-size: 4em;
 }
 
 .landing-logo .landing-nitk {
@@ -103,9 +107,10 @@
 }
 
 .landing-img {
-    position: static;
-    transform: translate(0, 6px);
-    width: 100%;
+    width: 100vw;
+    margin-top: 16px;
+    margin-left: -16px;
+    margin-bottom: -8px;
 }
 
 .landing-play {
