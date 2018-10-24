@@ -1,0 +1,19 @@
+<div class="back-circle iblue"></div>
+
+<div class="page-title poppins iblack-text">ABOUT</div>
+
+<div class="mcontainer">
+  <div class="about-desc poppins iblack-text">
+    {{ aboutDesc }}
+  </div>
+
+  <div class="history-item row" *ngFor="let item of history">
+    <div class="col s12 m4 history-image" [style.backgroundImage]="'url(' + item.image + ')'">
+      <img src="{{ item.image }}"/>
+    </div>
+    <div class="col s12 m8 history-content">
+      <div class="history-title poppins">{{ item.year }}</div>
+      <div class="history-desc">{{ item.desc }}</div>
+    </div>
+  </div>
+</div>

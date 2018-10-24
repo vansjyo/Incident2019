@@ -6,7 +6,6 @@
     width: 1000px;
     border-radius: 100%;
     z-index: -1;
-    transition: all 300ms ease-out;
     opacity: 0.3;
 }
 
