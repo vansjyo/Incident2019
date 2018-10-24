@@ -1,6 +1,6 @@
 <div class="header iblue poppins">
   <i class="material-icons iwhite-text">menu</i>
-  <img src="assets/images/inci_logo.png"/>
+  <img class="header-logo" src="assets/images/inci_logo.png"/>
   <ul class="nav-links">
     <li *ngIf="!isHome()"><a href="/" class="iwhite-text">HOME</a></li>
     <li><a href="events" class="iwhite-text">EVENTS</a></li>
@@ -8,5 +8,11 @@
     <li><a href="#!" class="iwhite-text">iCARE</a></li>
     <li><a href="about" class="iwhite-text">ABOUT</a></li>
     <li><a href="#!" class="iwhite-text">CONTACT US</a></li>
+  </ul>
+  <ul class="social right">
+    <li><a href="{{ social.fb.link }}"><img src="{{ social.fb.image }}"/></a></li>
+    <li><a href="{{ social.tw.link }}"><img src="{{ social.tw.image }}"/></a></li>
+    <li><a href="{{ social.yt.link }}"><img src="{{ social.yt.image }}"/></a></li>
+    <li><a href="{{ social.ig.link }}"><img src="{{ social.ig.image }}"/></a></li>
   </ul>
 </div>

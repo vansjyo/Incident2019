@@ -1,6 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
+const SOCIAL = {
+  'fb': {
+    'link': 'facebook.com',
+    'image': 'assets/images/social/fb.svg'
+  },
+  'tw': {
+    'link': 'twitter.com',
+    'image': 'assets/images/social/tw.svg'
+  },
+  'yt': {
+    'link': 'youtube.com',
+    'image': 'assets/images/social/yt.svg'
+  },
+  'ig': {
+    'link': 'instagram.com',
+    'image': 'assets/images/social/ig.svg'
+  }
+};
+
 function toggleMenu() {
   const header = $('.header');
   const i = $('.header i');
@@ -20,6 +39,8 @@ function toggleMenu() {
 export class HeaderComponent implements OnInit {
 
   constructor() { }
+
+  social = SOCIAL;
 
   isHome() {
     return window.location.pathname === '/';
