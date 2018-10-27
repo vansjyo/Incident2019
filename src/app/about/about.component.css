@@ -1,0 +1,102 @@
+.back-circle {
+    position: absolute;
+    top: -500px;
+    left: -400px;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.page-title {
+    margin: 12% 0 32px 176px;
+    font-size: 8em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.about-desc {
+    font-weight: 700;
+    font-size: 1.6em;
+    max-width: 50%;
+}
+
+.history-item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    overflow: hidden;
+    display: flex;
+}
+
+.history-item .history-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.history-item .history-image img {
+    display: none;
+}
+
+.history-content {
+    height: 100%;
+    padding: 20px !important;
+    overflow-y: auto;
+}
+
+.history-title {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.history-desc {
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 1400px) {
+
+.back-circle {
+    top: -400px;
+    left: -250px;
+    height: 700px;
+    width: 700px;
+}
+
+.page-title {
+    margin: 10% 152px 8% 152px;
+    font-size: 5em;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+.back-circle {
+    top: -90vw;
+    left: -70vw;
+    height: 150vw;
+    width: 150vw;
+}
+
+.page-title {
+    margin: 30vw 16px 20vw 16px;
+    font-size: 4em;
+}
+
+.about-desc {
+    max-width: 100%;
+}
+
+.history-item {
+    display: block;
+}
+
+.history-item .history-image img {
+    display: block;
+    width: 100%;
+}
+
+}
