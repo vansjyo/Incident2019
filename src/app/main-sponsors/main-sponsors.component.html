@@ -1,0 +1,15 @@
+<div class="mcontainer center-align">
+  <h4 class="poppins iblack-text"><b>OUR PROUD SPONSORS</b></h4>
+
+  <div class="row center-align">
+    <div class="col sponsor-item" *ngFor="let sponsor of sponsors.main">
+      <div class="image">
+        <img src="{{ sponsor.image }}"/>
+      </div>
+      <div class="title">{{ sponsor.title }}</div>
+    </div>
+  </div>
+
+  <button class="mbtn">SEE ALL SPONSORS</button>
+  <br/><br/><br/>
+</div>

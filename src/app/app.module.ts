@@ -10,6 +10,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { EventsComponent } from './events/events.component';
 import { AboutComponent } from './about/about.component';
 import { IcareComponent } from './icare/icare.component';
+import { MainSponsorsComponent } from './main-sponsors/main-sponsors.component';
 
 const appRoutes: Routes = [
   {
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
     TestimonialsComponent,
     EventsComponent,
     AboutComponent,
-    IcareComponent
+    IcareComponent,
+    MainSponsorsComponent
   ],
   imports: [
     BrowserModule,

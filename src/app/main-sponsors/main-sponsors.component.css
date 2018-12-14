@@ -1,0 +1,27 @@
+.sponsor-item {
+    float: none;
+    width: 20%;
+    padding: 16px !important;
+    display: inline-block;
+}
+
+.sponsor-item .image {
+    width: 100%;
+}
+
+.sponsor-item .image img {
+    width: 100%;
+}
+
+.sponsor-item .title {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 800px) {
+
+.sponsor-item {
+    width: 50%;
+}
+
+}

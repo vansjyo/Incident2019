@@ -47,6 +47,22 @@ body {
     padding: 0 !important;
 }
 
+.mbtn {
+    background: transparent;
+    border: 1px solid #002D54;
+    padding: 16px 32px 16px 32px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #002D54;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.mbtn:hover {
+    background: #002D54;
+    color: white;
+}
+
 .back-circle {
     position: absolute;
     top: -500px;
