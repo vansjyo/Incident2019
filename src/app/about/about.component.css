@@ -1,21 +1,3 @@
-.back-circle {
-    position: absolute;
-    top: -500px;
-    left: -400px;
-    height: 1000px;
-    width: 1000px;
-    border-radius: 100%;
-    z-index: -1;
-    opacity: 0.3;
-}
-
-.page-title {
-    margin: 12% 0 32px 176px;
-    font-size: 8em;
-    font-weight: 700;
-    line-height: 1em;
-}
-
 .about-desc {
     font-weight: 700;
     font-size: 1.6em;
@@ -58,33 +40,9 @@
 
 @media only screen and (max-width: 1400px) {
 
-.back-circle {
-    top: -400px;
-    left: -250px;
-    height: 700px;
-    width: 700px;
-}
-
-.page-title {
-    margin: 10% 152px 8% 152px;
-    font-size: 5em;
-}
-
 }
 
 @media only screen and (max-width: 800px) {
-
-.back-circle {
-    top: -90vw;
-    left: -70vw;
-    height: 150vw;
-    width: 150vw;
-}
-
-.page-title {
-    margin: 30vw 16px 20vw 16px;
-    font-size: 4em;
-}
 
 .about-desc {
     max-width: 100%;

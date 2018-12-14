@@ -9,6 +9,7 @@ import { LandingComponent } from './landing/landing.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { EventsComponent } from './events/events.component';
 import { AboutComponent } from './about/about.component';
+import { IcareComponent } from './icare/icare.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,11 @@ const appRoutes: Routes = [
     component: AboutComponent,
     data: { title: 'Incident 2019 - About' }
   },
+  {
+    path: 'icare',
+    component: IcareComponent,
+    data: { title: 'Incident 2019 - iCare' }
+  },
 ];
 
 @NgModule({
@@ -36,7 +42,8 @@ const appRoutes: Routes = [
     LandingComponent,
     TestimonialsComponent,
     EventsComponent,
-    AboutComponent
+    AboutComponent,
+    IcareComponent
   ],
   imports: [
     BrowserModule,
