@@ -1,5 +1,6 @@
 .footer {
     width: 100%;
+    padding-bottom: 1em;
     }
 .left-content{
     font-size: 1.5em;
@@ -14,9 +15,25 @@
     text-align: right;
             }
 
+.footer i {
+    display: none;
+            }
+
+ .footer .nav-links li {
+     cursor: pointer;
+                         }
+            
+ .footer .nav-links li a {
+     text-decoration: none;
+            }
+            
+ .footer .nav-links li:hover {
+                text-decoration: underline;
+            }
 @media only screen and (max-width: 1400px){
     .footer {
         width: 100%;
+        padding-bottom: 1em;
             }
     .left-content{
         font-size: 1.25em;
@@ -35,6 +52,7 @@
 @media only screen and (max-width: 700px){
     .footer {
         width: 100%;
+        padding-bottom: 2em;
             }
     .left-content{
         font-size: 1em;
