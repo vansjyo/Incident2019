@@ -11,6 +11,7 @@ import { EventsComponent } from './events/events.component';
 import { AboutComponent } from './about/about.component';
 import { IcareComponent } from './icare/icare.component';
 import { MainSponsorsComponent } from './main-sponsors/main-sponsors.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   {
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     EventsComponent,
     AboutComponent,
     IcareComponent,
-    MainSponsorsComponent
+    MainSponsorsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
