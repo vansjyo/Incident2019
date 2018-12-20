@@ -34,6 +34,11 @@ const appRoutes: Routes = [
     component: IcareComponent,
     data: { title: 'Incident 2019 - iCare' }
   },
+  {
+    path: 'sponsors',
+    component: MainSponsorsComponent,
+    data: { title: 'Incident 2019 - iCare' }
+  },
 ];
 
 @NgModule({
