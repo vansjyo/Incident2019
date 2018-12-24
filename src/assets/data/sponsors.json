@@ -50,5 +50,53 @@
             "image": "assets/images/sponsors/microsoft.png",
             "title": "Co Sponsor"
         }
+    ],
+
+    "all": [
+        {
+            "name": "Google",
+            "image": "assets/images/sponsors/google.png",
+            "title": "Co Sponsor"
+        },
+        {
+            "name": "Microsoft",
+            "image": "assets/images/sponsors/microsoft.png",
+            "title": "Co Sponsor"
+        },
+        {
+            "name": "Google",
+            "image": "assets/images/sponsors/google.png",
+            "title": "Co Sponsor"
+        },
+        {
+            "name": "Microsoft",
+            "image": "assets/images/sponsors/microsoft.png",
+            "title": "Co Sponsor"
+        },
+        {
+            "name": "Google",
+            "image": "assets/images/sponsors/google.png",
+            "title": "Co Sponsor"
+        },
+        {
+            "name": "Microsoft",
+            "image": "assets/images/sponsors/microsoft.png",
+            "title": "Co Sponsor"
+        },
+        {
+            "name": "Google",
+            "image": "assets/images/sponsors/google.png",
+            "title": "Co Sponsor"
+        },
+        {
+            "name": "Microsoft",
+            "image": "assets/images/sponsors/microsoft.png",
+            "title": "Co Sponsor"
+        },
+        {
+            "name": "Google",
+            "image": "assets/images/sponsors/google.png",
+            "title": "Co Sponsor"
+        }
     ]
 }
