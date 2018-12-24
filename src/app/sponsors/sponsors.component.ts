@@ -4,15 +4,13 @@ declare const require;
 
 const SPONSORS = require('../../assets/data/sponsors.json');
 @Component({
-  selector: 'app-main-sponsors',
-  templateUrl: './main-sponsors.component.html',
-  styleUrls: ['./main-sponsors.component.css']
+  selector: 'app-sponsors',
+  templateUrl: './sponsors.component.html',
+  styleUrls: ['./sponsors.component.css']
 })
-export class MainSponsorsComponent implements OnInit {
+export class SponsorsComponent implements OnInit {
   sponsors = SPONSORS;
-  isHome(){
-    return isHome();
-  }
+  isHome = isHome;
   constructor() {}
 
   ngOnInit() {}

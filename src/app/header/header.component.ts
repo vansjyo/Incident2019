@@ -43,9 +43,7 @@ export class HeaderComponent implements OnInit {
 
   social = SOCIAL;
 
-  isHome(){
-    return isHome();
-  }
+  isHome = isHome;
 
   ngOnInit() {
     $('.header i').click(toggleMenu);
