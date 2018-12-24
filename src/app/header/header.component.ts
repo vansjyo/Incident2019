@@ -3,21 +3,21 @@ import {isHome} from '../app.component';
 import * as $ from 'jquery';
 
 const SOCIAL = {
-  fb: {
-    link: 'facebook.com',
-    image: 'assets/images/social/fb.svg'
+  'fb': {
+    'link': 'facebook.com',
+    'image': 'assets/images/social/fb.svg'
   },
-  tw: {
-    link: 'twitter.com',
-    image: 'assets/images/social/tw.svg'
+  'tw': {
+    'link': 'twitter.com',
+    'image': 'assets/images/social/tw.svg'
   },
-  yt: {
-    link: 'youtube.com',
-    image: 'assets/images/social/yt.svg'
+  'yt': {
+    'link': 'youtube.com',
+    'image': 'assets/images/social/yt.svg'
   },
-  ig: {
-    link: 'instagram.com',
-    image: 'assets/images/social/ig.svg'
+  'ig': {
+    'link': 'instagram.com',
+    'image': 'assets/images/social/ig.svg'
   }
 };
 
