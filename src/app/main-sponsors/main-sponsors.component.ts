@@ -1,5 +1,5 @@
-import { Component, OnInit } from "@angular/core";
-import { isHome } from "../header/header.component";
+import { Component, OnInit } from '@angular/core';
+import { isHome } from '../app.component';
 declare const require;
 
 const SPONSORS = require("../../assets/data/sponsors.json");
@@ -11,8 +11,9 @@ isHome();
 })
 export class MainSponsorsComponent implements OnInit {
   sponsors = SPONSORS;
-  Home = isHome();
-
+  isHome(){
+    return isHome();
+  }
   constructor() {}
 
   ngOnInit() {}

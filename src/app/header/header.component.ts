@@ -1,5 +1,6 @@
-import { Component, OnInit } from "@angular/core";
-import * as $ from "jquery";
+import { Component, OnInit } from '@angular/core';
+import {isHome} from '../app.component';
+import * as $ from 'jquery';
 
 const SOCIAL = {
   fb: {
@@ -31,9 +32,6 @@ function toggleMenu() {
   }, 0);
 }
 
-export function isHome() {
-  return window.location.pathname === "/";
-}
 
 @Component({
   selector: "app-header",
@@ -45,7 +43,9 @@ export class HeaderComponent implements OnInit {
 
   social = SOCIAL;
 
-  Home = isHome();
+  isHome(){
+    return isHome();
+  }
 
   ngOnInit() {
     $(".header i").click(toggleMenu);

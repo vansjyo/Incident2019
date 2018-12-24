@@ -1,27 +1,22 @@
 <div class="mcontainer center-align">
-  <div *ngIf="Home">
-    <h4 class="poppins iblack-text"><b>OUR PROUD SPONSORS</b></h4>
+  <div>
+    <h4 *ngIf="isHome()" class="poppins iblack-text">
+      <b>OUR PROUD SPONSORS</b>
+    </h4>
     <div class="row center-align">
       <div class="col sponsor-item" *ngFor="let sponsor of sponsors.main">
         <div class="image"><img src="{{ sponsor.image }}" /></div>
         <div class="title">{{ sponsor.title }}</div>
       </div>
-    </div>
-    <a href="/sponsors"> <button class="mbtn">SEE ALL SPONSORS</button> </a>
-    <br /><br /><br />
-  </div>
 
-  <div *ngIf="!Home">
-    <h4 class="poppins iblack-text" style="margin-top:5em">
-      <b>OUR PROUD SPONSORS</b>
-    </h4>
-    <div class="row center-align">
-      <div class="col sponsor-item" *ngFor="let sponsor of sponsors.all">
-        <div class="image"><img src="{{ sponsor.image }}" /></div>
-        <div class="title">{{ sponsor.title }}</div>
+      <div *ngIf="!isHome()">
+        <div class="col sponsor-item" *ngFor="let sponsor of sponsors.all">
+          <div class="image"><img src="{{ sponsor.image }}" /></div>
+          <div class="title">{{ sponsor.title }}</div>
+        </div>
       </div>
     </div>
+    <a *ngIf="isHome()" href="/sponsors" class="mbtn">SEE ALL SPONSORS</a>
     <br /><br /><br />
-    <div></div>
   </div>
 </div>
