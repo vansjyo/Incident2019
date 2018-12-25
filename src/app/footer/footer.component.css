@@ -14,7 +14,7 @@
   font-size: 1.125em;
   text-align: right;
 }
-.center {
+.mob_only {
   display: none;
 }
 .footer i {
@@ -67,22 +67,17 @@
     font-size: 0.813em;
     text-align: left;
   }
-  .center {
-    display: flex;
-    justify-content: center;
-  }
-  .social {
-    margin: 0 auto;
-    position: relative;
-
+  .mob_only {
+    display: inline;
   }
   .social li {
     display: inline;
     opacity: 1;
   }
   .social li img {
-    height: 20px;
+    height: 45px;
     vertical-align: middle;
-    margin: 0 10px 0 10px;
+    margin-right: 25px;
   }
 }
+
