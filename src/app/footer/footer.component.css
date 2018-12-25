@@ -14,6 +14,9 @@
   font-size: 1.125em;
   text-align: right;
 }
+.mob_only {
+  display: none;
+}
 
 .footer i {
   display: none;
@@ -65,4 +68,18 @@
     font-size: 0.813em;
     text-align: left;
   }
+  .mob_only {
+    display: inline;
+  }
+  .social li {
+    display: inline;
+    opacity: 1;
+  }
+  .social li img {
+    height: 45px;
+    vertical-align: middle;
+    margin-right: 25px;
+  }
+
 }
+
