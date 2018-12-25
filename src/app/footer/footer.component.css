@@ -14,7 +14,7 @@
   font-size: 1.125em;
   text-align: right;
 }
-.centre{
+.centre-content{
   display: none;
 }
 .footer i {
@@ -67,7 +67,7 @@
     font-size: 0.813em;
     text-align: left;
   }
-  .centre{
+  .centre-content{
     display: flex;
     justify-content: centre;
   }
@@ -79,11 +79,16 @@
 
   .social li {
     display: inline;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .social li:hover {
     opacity: 1;
   }
 
   .social li img {
-    height: 20px;
+    height: 60px;
     vertical-align: middle;
     margin: 0 10px 0 10px;
   }
