@@ -6,6 +6,7 @@ body {
     background-color: #F8F8FF;
     width: 100vw;
     overflow-x: hidden;
+    padding-top: 10em;
 }
 
 .iwhite {
