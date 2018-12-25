@@ -14,9 +14,7 @@
   font-size: 1.125em;
   text-align: right;
 }
-.center {
-  display: none;
-}
+
 .footer i {
   display: none;
 }
@@ -66,23 +64,5 @@
   .right-content {
     font-size: 0.813em;
     text-align: left;
-  }
-  .center {
-    display: flex;
-    justify-content: center;
-  }
-  .social {
-    margin: 0 auto;
-    position: relative;
-
-  }
-  .social li {
-    display: inline;
-    opacity: 1;
-  }
-  .social li img {
-    height: 20px;
-    vertical-align: middle;
-    margin: 0 10px 0 10px;
   }
 }
