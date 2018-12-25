@@ -1,9 +1,26 @@
+.icare .row {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+}
+
 .icare-desc {
     font-weight: 700;
     font-size: 1.6em;
 }
 
 .icare-desc-image img {
+    width: 100%;
+}
+
+.icare-desc:nth-child(1) {
+    padding-right: 24px !important;
+}
+
+.icare-desc:nth-child(2) {
+    padding-left: 24px !important;
+}
+
+.icare-backdrop {
     width: 100%;
 }
 
@@ -15,6 +32,18 @@
 
 .icare-desc {
     max-width: 100%;
+}
+
+.icare-desc:nth-child(1) {
+    padding-right: 0 !important;
+}
+
+.icare-desc:nth-child(2) {
+    padding-left: 0 !important;
+}
+
+.icare .valign-wrapper {
+    display: block;
 }
 
 }

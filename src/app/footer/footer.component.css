@@ -17,6 +17,7 @@
 .mob_only {
   display: none;
 }
+
 .footer i {
   display: none;
 }
@@ -79,5 +80,6 @@
     vertical-align: middle;
     margin-right: 25px;
   }
+
 }
 
