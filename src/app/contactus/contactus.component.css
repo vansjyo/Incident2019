@@ -1,0 +1,61 @@
+.contact-us {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    padding: 48px 0 48px 0;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .contact-us form {
+        display: inline-block;
+        width: 600px;
+    }
+
+}
+
+.contact-us h4 {
+    font-weight: 700;
+}
+
+/* label color */
+.contact-us .input-field label {
+    color: #002D54;
+    font-weight: 500;
+    opacity: 0.7;
+}
+/* label focus color */
+.contact-us .input-field input:focus + label {
+    color: #002D54;
+    opacity: 1;
+}
+/* label underline focus color */
+.contact-us .input-field input:focus {
+    border-bottom: 1px solid #002D54;
+    box-shadow: 0 1px 0 0 #002D54;
+}
+/* valid color */
+.contact-us .input-field input.valid {
+    border-bottom: 1px solid #002D54;
+    box-shadow: 0 1px 0 0 #002D54;
+}
+/* invalid color */
+.contact-us .input-field input.invalid {
+    border-bottom: 1px solid #002D54;
+    box-shadow: 0 1px 0 0 #002D54;
+}
+/* icon prefix focus color */
+.contact-us .input-field .prefix.active {
+    color: #002D54;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .contact-us {
+        border: 0;
+    }
+
+    .contact-us .form {
+        width: 100%;
+    }
+
+}

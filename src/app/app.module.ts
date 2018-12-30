@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { IcareComponent } from './icare/icare.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const appRoutes: Routes = [
   {
@@ -37,7 +38,11 @@ const appRoutes: Routes = [
   {
     path: 'sponsors',
     component: SponsorsComponent,
-    data: { title: 'Incident 2019 - iCare' }
+    data: { title: 'Incident 2019 - Sponsors' }
+  }, {
+    path: 'contact-us',
+    component: ContactusComponent,
+    data: { title: 'Incident 2019 - Contact Us' }
   },
 ];
 
@@ -55,7 +60,8 @@ const appRoutes: Routes = [
     AboutComponent,
     IcareComponent,
     SponsorsComponent,
-    FooterComponent
+    FooterComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
