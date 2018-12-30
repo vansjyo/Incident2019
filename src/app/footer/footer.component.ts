@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { isHome } from '../app.component';
 
 const SOCIAL = {
   'fb': {
@@ -29,6 +30,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   social = SOCIAL;
+  isHome = isHome;
 
   ngOnInit() {
   }
