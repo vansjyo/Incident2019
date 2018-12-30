@@ -1,3 +1,36 @@
+.about-slider {
+    position: relative;
+    margin-top: -140px;
+    height: calc(100vh) !important;
+}
+
+.about-slider .carousel-fixed-item {
+    position: absolute;
+    top: calc(140px);
+    left: 0;
+}
+
+.about-slider .carousel-item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-slider .carousel-item:before {
+  content: "";
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0; 
+  background: rgba(0, 45, 84, 0.2);
+  pointer-events: none;
+}
+
+.about-slider .carousel-item div {
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
 .about-desc {
     font-weight: 700;
     font-size: 1.6em;
@@ -43,6 +76,16 @@
 }
 
 @media only screen and (max-width: 1400px) {
+
+    .about-slider .carousel-fixed-item {
+        top: calc(80px);
+    }
+
+    .about-slider {
+        margin-top: -80px;
+        /* -12px is a hack. I don't know the reason */
+        height: calc(100vh - 12px) !important;
+    }
     
     .history-desc {
         font-size: 1em;
@@ -55,6 +98,11 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+.about-slider {
+    /* remove some height to account for address bar */
+    height: calc(100vh - 48px) !important;
+}
 
 .about-desc {
     max-width: 100%;
@@ -72,7 +120,6 @@
 .history-item .history-image {
     background: none !important;
 }
-
 
 .history-title {
     height: initial !important;
