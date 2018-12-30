@@ -1,9 +1,10 @@
 .landing-container {
     display: table-cell;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     padding: 0 176px 0 176px;
     vertical-align: middle;
+    
 }
 
 .landing-logo .landing-inci {
@@ -34,11 +35,7 @@
 
 .landing-triangle {
     display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 0;
+    margin-top:-100px;
     border-style: solid;
     border-width: 0 0 300px 100vw;
     border-color: transparent transparent #002D54 transparent;
@@ -47,10 +44,11 @@
 
 .landing-backdrop {
     position: absolute;
-    top: 20%;
+    top: 10%;
     right: 8%;
     height: 60%;
 }
+
 
 @media only screen and (max-width: 1400px) {
 

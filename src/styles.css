@@ -6,6 +6,7 @@ body {
     background-color: #F8F8FF;
     width: 100vw;
     overflow-x: hidden;
+    padding-top: 140px;
 }
 
 .iwhite {
@@ -65,8 +66,8 @@ body {
 
 .back-circle {
     position: absolute;
-    top: -500px;
-    left: -400px;
+    top: -600px;
+    left: -500px;
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
@@ -75,7 +76,7 @@ body {
 }
 
 .page-title {
-    margin: 12% 0 16px 176px;
+    margin: 4% 0 16px 160px;
     font-size: 8em;
     font-weight: 700;
     line-height: 1em;
@@ -98,6 +99,7 @@ body {
 
 body {
     /* margin-top: 80px !important; */
+    padding-top: 95px;
 }
 
 .mcontainer {
@@ -114,7 +116,7 @@ body {
 }
 
 .page-title {
-    margin: 10% 152px 0 152px;
+    margin: 4% 152px 0 145px;
     font-size: 5em;
 }
 
@@ -123,7 +125,7 @@ body {
 @media only screen and (max-width: 800px) {
 
 body {
-    margin-top: 80px !important;
+    padding-top:75px;
 }
 
 .mcontainer {
@@ -140,7 +142,7 @@ body {
 }
 
 .page-title {
-    margin: 30vw 16px 16px 16px;
+    margin: 25vw 16px 16px 12px;
     font-size: 4em;
 }
 

@@ -8,7 +8,7 @@
 }
 
 .events-listing {
-    margin: 6% 176px 0 176px !important;
+    margin: 4% 176px 0 176px !important;
     width: calc(100% - 352px);
     transition: opacity 300ms ease-out;
 }
