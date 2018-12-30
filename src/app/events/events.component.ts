@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from "@angular/platform-browser";
+import { isDevMode } from '@angular/core';
 import * as $ from 'jquery';
 import * as materialize from 'materialize-css';
 declare const require;
@@ -56,6 +57,7 @@ export class EventsComponent implements OnInit {
   list = undefined;
   modalTitle = 'title';
   modalText = 'text';
+  isDevMode = isDevMode;
 
   listIsCategory () {
     return this.list === CATEGORIES;
