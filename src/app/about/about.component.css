@@ -101,7 +101,7 @@
 
 .about-slider {
     /* remove some height to account for address bar */
-    height: calc(100vh - 48px) !important;
+    height: 700px !important;
 }
 
 .about-desc {
