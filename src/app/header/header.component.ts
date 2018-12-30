@@ -2,24 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {isHome} from '../app.component';
 import * as $ from 'jquery';
 
-const SOCIAL = {
-  'fb': {
-    'link': 'facebook.com',
-    'image': 'assets/images/social/fb.svg'
-  },
-  'tw': {
-    'link': 'twitter.com',
-    'image': 'assets/images/social/tw.svg'
-  },
-  'yt': {
-    'link': 'youtube.com',
-    'image': 'assets/images/social/yt.svg'
-  },
-  'ig': {
-    'link': 'instagram.com',
-    'image': 'assets/images/social/ig.svg'
-  }
-};
+const SOCIAL = require('../../assets/data/social.json');
 
 function toggleMenu() {
   const header = $('.header');
