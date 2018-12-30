@@ -94,10 +94,17 @@ body {
     font-size: 6em;
 }
 
+/* Mac Pro 13in */
+@media only screen and (min-width: 1400px) and (min-resolution: 96dpi) {
+    body, html {
+        font-size: 12px;
+    }
+}
 
 @media only screen and (max-width: 1400px) {
 
 body {
+    font-size: 14px;
     /* margin-top: 80px !important; */
     padding-top: 95px;
 }
