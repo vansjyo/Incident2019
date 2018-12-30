@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-const ICARE_DESC = `Lorem ipsum dolor sit amet, ius reque constituam adversarium
- in, pro et illum adipisci oportere. An eos denique consequuntur. Eum ei saepe
- alienum propriae, audire delicata voluptaria at pri. In ridens antiopam sea.`;
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-icare',
@@ -11,9 +8,9 @@ const ICARE_DESC = `Lorem ipsum dolor sit amet, ius reque constituam adversarium
 })
 export class IcareComponent implements OnInit {
 
-  iCareDesc = ICARE_DESC;
-
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Incident 2019 - iCare');
+  }
 
   ngOnInit() {
   }

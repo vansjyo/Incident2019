@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import * as materialize from 'materialize-css';
+import { Title } from '@angular/platform-browser';
+declare const require;
 
 const ABOUT = require('../../assets/data/about.json');
 
@@ -15,7 +17,9 @@ export class AboutComponent implements OnInit {
   history = ABOUT.history;
   slider = undefined;
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Incident 2019 - About');
+  }
 
   ngOnInit() {
     document.addEventListener('DOMContentLoaded', function () {

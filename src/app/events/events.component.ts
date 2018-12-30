@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from "@angular/platform-browser";
 import * as $ from 'jquery';
 import * as materialize from 'materialize-css';
+declare const require;
 
 const EVENT = require('../../assets/data/events.json');
 
@@ -44,7 +46,9 @@ window.onhashchange = handleHashChange;
 })
 export class EventsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Incident 2019 - Events');
+  }
 
   categories = CATEGORIES;
   events = EVENTS;

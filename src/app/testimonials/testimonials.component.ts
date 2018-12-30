@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+declare const require;
 
 const TESTIMONIAL = require('../../assets/data/testimonials.json');
 const TESTIMONIALS = TESTIMONIAL.testimonials;

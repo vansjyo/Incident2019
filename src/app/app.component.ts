@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import * as $ from 'jquery';
 
-export function isHome(){
+export function isHome() {
   return window.location.pathname === '/';
 }
 
@@ -12,5 +12,4 @@ export function isHome(){
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Incident2019';
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {isHome} from '../app.component';
 import * as $ from 'jquery';
+declare const require;
 
 const SOCIAL = require('../../assets/data/social.json');
 
