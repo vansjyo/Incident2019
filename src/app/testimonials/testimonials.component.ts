@@ -1,27 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
-const TESTIMONIALS = [
-  {
-    'image': 'https://appworksinc.com/wp-content/uploads/2013/05/Team-Member-3.jpg',
-    'text': 'Lorem ipsum dolor sit amet, eu eos quaestio periculis, vis ea lucilius moderatius.',
-    'author': 'John Doe 1'
-  }, {
-    'image': 'https://appworksinc.com/wp-content/uploads/2013/05/Team-Member-3.jpg',
-    'text': 'Lorem ipsum dolor sit amet, eu eos quaestio periculis, vis ea lucilius moderatius.',
-    'author': 'John Doe 2'
-  }, {
-    'image': 'https://appworksinc.com/wp-content/uploads/2013/05/Team-Member-3.jpg',
-    'text': 'Lorem ipsum dolor sit amet, eu eos quaestio periculis, vis ea lucilius moderatius.',
-    'author': 'John Doe 3'
-  },
-];
-
+const TESTIMONIAL = require('../../assets/data/testimonials.json');
+const TESTIMONIALS = TESTIMONIAL.testimonials;
 let currentTestimonial = 0;
 
 function nextTestimonial() {
   currentTestimonial = (currentTestimonial + 1) % TESTIMONIALS.length;
-  const qouteRotation = 180 + (currentTestimonial * 360)
+  const qouteRotation = 180 + (currentTestimonial * 360);
   setTimeout(() => {
     $('.testimonials-container ul').css('transform',
                              `translateX(-${currentTestimonial * 100}%)`);

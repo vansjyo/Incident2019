@@ -1,0 +1,19 @@
+{
+  "testimonials": [
+    {
+      "image": "https://appworksinc.com/wp-content/uploads/2013/05/Team-Member-3.jpg",
+      "text": "Lorem ipsum dolor sit amet, eu eos quaestio periculis, vis ea lucilius moderatius.",
+      "author": "John Doe 1"
+    },
+    {
+      "image": "https://appworksinc.com/wp-content/uploads/2013/05/Team-Member-3.jpg",
+      "text": "Lorem ipsum dolor sit amet, eu eos quaestio periculis, vis ea lucilius moderatius.",
+      "author": "John Doe 2"
+    },
+    {
+      "image": "https://appworksinc.com/wp-content/uploads/2013/05/Team-Member-3.jpg",
+      "text": "Lorem ipsum dolor sit amet, eu eos quaestio periculis, vis ea lucilius moderatius.",
+      "author": "John Doe 3"
+    }
+  ]
+}

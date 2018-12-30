@@ -2,87 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import * as materialize from 'materialize-css';
 
-const CATEGORIES = [
-  {
-    'name': 'Beach Events',
-    'icon': '<i class="material-icons iblack-text">beach_access</i>',
-    'hash': 'beach'
-  },
-  {
-    'name': 'Pro Shows',
-    'icon': '<i class="material-icons iblack-text">adjust</i>',
-    'hash': 'pro_shows'
-  },
-  {
-    'name': 'Music',
-    'icon': '<i class="material-icons iblack-text">music_note</i>',
-    'hash': 'music'
-  },
-  {
-    'name': 'Dance',
-    'icon': '<i class="material-icons iblack-text">group</i>',
-    'hash': 'dance'
-  }
-];
+const EVENT = require('../../assets/data/events.json');
 
-const EVENTS = {
-  'beach' : [
-    {
-      'name': 'Kite Festival',
-      'icon': '<i class="material-icons iblack-text">adjust</i>',
-      'hash': 'kite_fest_1',
-      'desc': 'Festival of Kites'
-    },
-    {
-      'name': 'Kite Festival 1',
-      'icon': '<i class="material-icons iblack-text">adjust</i>',
-      'hash': 'kite_fest_2',
-      'desc': 'Festival of Kites 1'
-    }
-  ],
-  'pro_shows': [
-    {
-      'name': 'Pro Show 1',
-      'icon': '<i class="material-icons iblack-text">adjust</i>',
-      'hash': 'pro_show_1',
-      'desc': 'Festival of Kites'
-    },
-    {
-      'name': 'Pro Show 2',
-      'icon': '<i class="material-icons iblack-text">adjust</i>',
-      'hash': 'pro_show_2',
-      'desc': 'Festival of Kites 1'
-    }
-  ],
-  'music': [
-    {
-      'name': 'Music 1',
-      'icon': '<i class="material-icons iblack-text">adjust</i>',
-      'hash': 'music_1',
-      'desc': 'Festival of Kites'
-    },
-    {
-      'name': 'Music 2',
-      'icon': '<i class="material-icons iblack-text">adjust</i>',
-      'hash': 'music_2',
-      'desc': 'Festival of Kites 1'
-    }
-  ],
-  'dance': [
-    {
-      'name': 'Dance 1',
-      'icon': '<i class="material-icons iblack-text">adjust</i>',
-      'hash': 'dance_1',
-      'desc': 'Festival of Kites'
-    },
-    {
-      'name': 'Dance 2',
-      'icon': '<i class="material-icons iblack-text">adjust</i>',
-      'hash': 'dance_2',
-      'desc': 'Festival of Kites 1'
-    }
-  ]
-};
+const EVENTS = EVENT.events;
+const CATEGORIES = EVENT.categories;
 
 let instance;
 
