@@ -25,11 +25,21 @@ function toggleMenu() {
 export class HeaderComponent implements OnInit {
   constructor() {}
 
-  social = SOCIAL;
-
   isHome = isHome;
+  social = SOCIAL;
+  getPath = () => {
+    const path = window.location.pathname.replace('/', '');
+    return path === '' ? 'home' : path;
+  }
 
   ngOnInit() {
+    console.log(this.getPath());
     $('.header i').click(toggleMenu);
+    $('.header .' + this.getPath()).css({
+      'opacity': '0.8',
+      'text-decoration': 'underline'
+    });
+    $('.header .' + this.getPath()).attr('href', 'javascript: void()');
+    $('.header .' + this.getPath()).click(toggleMenu);
   }
 }
