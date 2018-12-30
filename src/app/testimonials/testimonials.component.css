@@ -22,6 +22,7 @@
 
 .testimonial {
     display: inline;
+    vertical-align: top;
     box-sizing: border-box;
     width: 100%;
 }
@@ -68,6 +69,7 @@
 
 .qoute-char i {
     font-size: 6em;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
     transition: all 300ms ease-out;
 }
 
@@ -141,14 +143,11 @@ img{
 }
 
 .testimonial .content .author {
-  width: 80%;
+  font-size: 1.4em !important;
   text-align: right;
-  font-size: 1em;
+  padding-top: 8px;
   font-style: italic;
   opacity: 0.7;
 }
-
-
-
 
 }
