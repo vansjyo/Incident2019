@@ -6,13 +6,17 @@
   <div class="about-desc poppins iblack-text" [innerHTML]="aboutDesc">
   </div>
 
-  <div class="history-item row" *ngFor="let item of history">
-    <div class="col s12 m4 history-image" [style.backgroundImage]="'url(' + item.image + ')'">
-      <img src="{{ item.image }}"/>
+  <div class="history-item" *ngFor="let item of history">
+    <div class="row">
+      <div class="history-image" [style.backgroundImage]="'url(' + item.image + ')'">
+        <img src="{{ item.image }}"/>
+        <div class="history-title poppins iwhite-text">{{ item.year }}</div>
+      </div>
     </div>
-    <div class="col s12 m8 history-content">
-      <div class="history-title poppins">{{ item.year }}</div>
-      <div class="history-desc" [innerHTML]="item.desc"></div>
+    <div class="row">
+      <div class="history-content">
+        <div class="history-desc" [innerHTML]="item.desc"></div>
+      </div>
     </div>
   </div>
 </div>
