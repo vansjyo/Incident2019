@@ -68,6 +68,7 @@
     height: 600px;
     display: table-cell;
     vertical-align: bottom;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .history-desc {
