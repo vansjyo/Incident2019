@@ -28,7 +28,7 @@ export class TestimonialsComponent implements OnInit {
 
   constructor() { }
 
-  interval = 8; // secs
+  interval = 6; // secs
   testimonials = TESTIMONIALS;
 
   ngOnInit() {
