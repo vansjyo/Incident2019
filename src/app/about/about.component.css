@@ -125,6 +125,7 @@
 .history-title {
     height: initial !important;
     color: #201D32 !important;
+    text-shadow: none;
 }
 
 }
