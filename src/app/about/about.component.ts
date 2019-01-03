@@ -28,10 +28,12 @@ export class AboutComponent implements OnInit {
         fullWidth: true,
         indicators: true
       });
-      setInterval(() => {
-        const element = document.querySelectorAll('.about-slider')[0];
-        const instance = materialize.Carousel.getInstance(element);
-        instance.next();
+      setTimeout(() => {
+        setInterval(() => {
+          const element = document.querySelectorAll('.about-slider')[0];
+          const instance = materialize.Carousel.getInstance(element);
+          instance.next();
+        }, 6000);
       }, 6000);
     });
   }

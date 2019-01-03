@@ -36,8 +36,7 @@ export class HeaderComponent implements OnInit {
     console.log(this.getPath());
     $('.header i').click(toggleMenu);
     $('.header .' + this.getPath()).css({
-      'opacity': '0.8',
-      'text-decoration': 'underline'
+      'opacity': '0.7',
     });
     $('.header .' + this.getPath()).attr('href', 'javascript: void()');
     $('.header .' + this.getPath()).click(toggleMenu);
