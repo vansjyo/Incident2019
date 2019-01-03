@@ -1,3 +1,7 @@
+<div *ngIf="!isHome()" class="back-circle iblue"></div>
+
+<div *ngIf="!isHome()" class="page-title poppins iblack-text">SPONSORS<br /><br /></div>
+
 <div class="mcontainer center-align">
   <div>
     <h4 *ngIf="isHome()" class="poppins iblack-text">
@@ -16,7 +20,7 @@
         </div>
       </div>
     </div>
-    <br>
+    <br /><br />
     <a *ngIf="isHome()" href="/sponsors" class="mbtn poppins">SEE ALL SPONSORS</a>
     <a *ngIf="!isHome()" href="/contact-us" class="mbtn poppins">WANT TO SPONSOR - CONTACT US</a>
     <br /><br /><br />
