@@ -6,19 +6,19 @@
     <div class="row center-align">
       <div class="col sponsor-item" *ngFor="let sponsor of sponsors.main">
         <div class="image"><img src="{{ sponsor.image }}" /></div>
-        <div class="title">{{ sponsor.title }}</div>
+        <div class="title">{{ sponsor.name }}</div>
       </div>
 
       <div *ngIf="!isHome()">
         <div class="col sponsor-item" *ngFor="let sponsor of sponsors.all">
           <div class="image"><img src="{{ sponsor.image }}" /></div>
-          <div class="title">{{ sponsor.title }}</div>
+          <div class="title">{{ sponsor.name }}</div>
         </div>
       </div>
     </div>
     <br>
     <a *ngIf="isHome()" href="/sponsors" class="mbtn poppins">SEE ALL SPONSORS</a>
-    <a *ngIf="!isHome()" href="/contact-us" class="mbtn poppins">Want to Sponsor - Contact Us</a>
+    <a *ngIf="!isHome()" href="/contact-us" class="mbtn poppins">WANT TO SPONSOR - CONTACT US</a>
     <br /><br /><br />
   </div>
 </div>
