@@ -3,7 +3,7 @@
     <div class="page-title poppins iwhite-text bold">ABOUT US</div>
   </div>
   <div *ngFor="let item of aboutDesc">
-    <a class="carousel-item" [style.backgroundImage]="'url(' + item.image + ')'" [href]="item.href">
+    <a class="carousel-item" [style.backgroundImage]="'url(' + (isMobile() ? item.mobile_image : item.image) + ')'" [href]="item.href">
       <div class="mcontainer iwhite-text poppins bold" [innerHTML]="item.desc"></div>
     </a>
   </div>

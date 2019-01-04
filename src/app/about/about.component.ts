@@ -16,6 +16,7 @@ export class AboutComponent implements OnInit {
   aboutDesc = ABOUT.about_desc;
   history = ABOUT.history;
   slider = undefined;
+  isMobile = () => window.outerWidth <= 800;
 
   constructor(private titleService: Title) {
     this.titleService.setTitle('Incident 2019 - About');
