@@ -16,7 +16,18 @@ export class AboutComponent implements OnInit {
   aboutDesc = ABOUT.about_desc;
   history = ABOUT.history;
   slider = undefined;
+  sliderCurrent = 0;
   isMobile = () => window.outerWidth <= 800;
+
+  sliderNext = () => {
+    setTimeout(() => {
+      const element = document.querySelectorAll('.about-slider')[0];
+      const instance = materialize.Carousel.getInstance(element);
+      instance.next();
+      this.sliderCurrent = (this.sliderCurrent + 1) % this.aboutDesc.length;
+      this.sliderNext();
+    }, this.aboutDesc[this.sliderCurrent].delay * 1000);
+  }
 
   constructor(private titleService: Title) {
     this.titleService.setTitle('Incident 2019 - About');
@@ -29,14 +40,8 @@ export class AboutComponent implements OnInit {
         fullWidth: true,
         indicators: true
       });
-      setTimeout(() => {
-        setInterval(() => {
-          const element = document.querySelectorAll('.about-slider')[0];
-          const instance = materialize.Carousel.getInstance(element);
-          instance.next();
-        }, 6000);
-      }, 6000);
     });
+    this.sliderNext();
   }
 
 }

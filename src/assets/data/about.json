@@ -3,44 +3,51 @@
   {
     "href": "#one!",
     "image": "assets/images/about/intro.jpg",
-    "mobile_image": "assets/images/about/intro.mob.jpg",
-    "desc": "Since its humble beginnings in the 1980s, Incident has grown to become the second largest cultural festival in India. Over the course of five spectacular days, Incident attracts over 40000 people across India. In recent years, Incident has seen some on India’s greatest talents grace its stage with their presence."
+    "mobileImage": "assets/images/about/intro.mob.jpg",
+    "desc": "Since its humble beginnings in the 1980s, Incident has grown to become the second largest cultural festival in India. Over the course of five spectacular days, Incident attracts over 40000 people across India. In recent years, Incident has seen some on India’s greatest talents grace its stage with their presence.",
+    "delay": 15
   },
   {
     "href": "#two!",
     "image": "assets/images/about/more-than-fest.jpg",
-    "mobile_image": "assets/images/about/more-than-fest.mob.jpg",
-    "desc": "But Incident is more than a festival."
+    "mobileImage": "assets/images/about/more-than-fest.mob.jpg",
+    "desc": "But Incident is more than a festival.",
+    "delay": 5
   },
   {
     "href": "#three!",
     "image": "assets/images/about/unseen-talents.jpg",
-    "mobile_image": "assets/images/about/unseen-talents.mob.jpg",
-    "desc": "Incident is a launchpad; a platform for the unseen talents of the world."
+    "mobileImage": "assets/images/about/unseen-talents.mob.jpg",
+    "desc": "Incident is a launchpad; a platform for the unseen talents of the world.",
+    "delay": 5
   },
   {
     "href": "#four!",
     "image": "assets/images/about/compassion.jpg",
-    "mobile_image": "assets/images/about/compassion.mob.jpg",
-    "desc": "Incident is about compassion for our people and our environment."
+    "mobileImage": "assets/images/about/compassion.mob.jpg",
+    "desc": "Incident is about compassion for our people and our environment.",
+    "delay": 5
   },
   {
     "href": "#five!",
     "image": "assets/images/about/friendships-memories.jpg",
-    "mobile_image": "assets/images/about/friendships-memories.mob.jpg",
-    "desc": "It is about the people, where friendships are born and memories made."
+    "mobileImage": "assets/images/about/friendships-memories.mob.jpg",
+    "desc": "It is about the people, where friendships are born and memories made.",
+    "delay": 5
   },
   {
     "href": "#six!",
     "image": "assets/images/about/connecting-people.jpg",
-    "mobile_image": "assets/images/about/connecting-people.mob.jpg",
-    "desc": "Incident lays the foundation for new bridges, connecting people thousands of miles apart."
+    "mobileImage": "assets/images/about/connecting-people.mob.jpg",
+    "desc": "Incident lays the foundation for new bridges, connecting people thousands of miles apart.",
+    "delay": 6
   },
   {
     "href": "#seven!",
     "image": "assets/images/about/unknown-paths.jpg",
-    "mobile_image": "assets/images/about/unknown-paths.mob.jpg",
-    "desc": "It is a spectacle, where every step taken is a new experience on an unknown path.<br/> Incident is a phenomenon."
+    "mobileImage": "assets/images/about/unknown-paths.mob.jpg",
+    "desc": "It is a spectacle, where every step taken is a new experience on an unknown path.<br/> Incident is a phenomenon.",
+    "delay": 8
   }
 ],
 
