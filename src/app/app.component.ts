@@ -5,6 +5,11 @@ export function isHome() {
   return window.location.pathname === '/';
 }
 
+export function getPath() {
+  const path = window.location.pathname.replace('/', '');
+  return path === '' ? 'home' : path;
+}
+
 
 @Component({
   selector: 'app-root',

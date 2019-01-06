@@ -29,7 +29,7 @@ export class TestimonialsComponent implements OnInit {
 
   constructor() { }
 
-  interval = 8; // secs
+  interval = 10; // secs
   testimonials = TESTIMONIALS;
 
   ngOnInit() {

@@ -1,24 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { isHome } from '../app.component';
+import { isHome, getPath } from '../app.component';
+import * as $ from 'jquery';
+declare const require;
 
-const SOCIAL = {
-  'fb': {
-    'link': 'facebook.com',
-    'image': 'assets/images/social/fb.svg'
-  },
-  'tw': {
-    'link': 'twitter.com',
-    'image': 'assets/images/social/tw.svg'
-  },
-  'yt': {
-    'link': 'youtube.com',
-    'image': 'assets/images/social/yt.svg'
-  },
-  'ig': {
-    'link': 'instagram.com',
-    'image': 'assets/images/social/ig.svg'
-  }
-};
+const SOCIAL = require('../../assets/data/social.json');
 
 @Component({
   selector: 'app-footer',
@@ -31,8 +16,13 @@ export class FooterComponent implements OnInit {
 
   social = SOCIAL;
   isHome = isHome;
+  getPath = getPath;
 
   ngOnInit() {
+    $('.footer .' + this.getPath()).css({
+      'opacity': '0.7',
+    });
+    $('.footer .' + this.getPath()).attr('href', 'javascript: void()');
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {isHome} from '../app.component';
+import {isHome, getPath} from '../app.component';
 import * as $ from 'jquery';
 declare const require;
 
@@ -27,10 +27,7 @@ export class HeaderComponent implements OnInit {
 
   isHome = isHome;
   social = SOCIAL;
-  getPath = () => {
-    const path = window.location.pathname.replace('/', '');
-    return path === '' ? 'home' : path;
-  }
+  getPath = getPath;
 
   ngOnInit() {
     console.log(this.getPath());
