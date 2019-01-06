@@ -10,7 +10,12 @@
 .events-listing {
     margin: 4% 176px 0 176px !important;
     width: calc(100% - 352px);
+    display: none;
     transition: opacity 300ms ease-out;
+}
+
+.events-listing.active {
+    display: block;
 }
 
 .events-listing .col {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from "@angular/platform-browser";
+import { Title } from '@angular/platform-browser';
 import { isDevMode } from '@angular/core';
 import * as $ from 'jquery';
 import * as materialize from 'materialize-css';
@@ -21,21 +21,26 @@ function getCategoryNameFromHash(hash) {
 }
 
 function handleHashChange() {
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: 'smooth'
-  });
   const hash = location.hash.replace('#', '');
-  if (hash === '') {
-    instance.list = CATEGORIES;
-    $('.page-title').text('EVENTS');
-    $('.back-link').css('opacity', '0');
-  } else {
-    instance.list = EVENTS[hash];
-    $('.page-title').text(getCategoryNameFromHash(hash).toUpperCase());
-    $('.back-link').css('opacity', '1');
-  }
+  console.log(window.scrollY);
+  $('.events-listing').css('opacity', '0');
+  $('html, body').animate({ scrollTop: 0 }, 300);
+  setTimeout(() => {
+    $('.events-listing').removeClass('active');
+    if (hash === '') {
+      instance.list = CATEGORIES;
+      $('.category-list').addClass('active');
+      $('.category-list').css('opacity', '1');
+      $('.page-title').text('EVENTS');
+      $('.back-link').css('opacity', '0');
+    } else {
+      instance.list = EVENTS[hash];
+      $('.' + hash + '-list').addClass('active');
+      $('.' + hash + '-list').css('opacity', '1');
+      $('.page-title').text(getCategoryNameFromHash(hash).toUpperCase());
+      $('.back-link').css('opacity', '1');
+    }
+  }, 310);
 }
 
 window.onhashchange = handleHashChange;
@@ -72,12 +77,14 @@ export class EventsComponent implements OnInit {
   ngOnInit() {
     instance = this;
     instance.list = undefined;
+    handleHashChange();
     $(document).ready(function () {
       const elems = document.querySelectorAll('.modal');
       materialize.Modal.init(elems, {});
       $('a[data-target="modal"]').click(this.setModalTitleText);
+      $('.back-link').click(() => { location.hash = ''; });
+      handleHashChange();
     });
-    handleHashChange();
     if (instance.list === undefined) {
       instance.list = CATEGORIES;
     }
