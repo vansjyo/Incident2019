@@ -13,6 +13,7 @@ import { IcareComponent } from './icare/icare.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 const appRoutes: Routes = [
   {
@@ -44,6 +45,11 @@ const appRoutes: Routes = [
     component: ContactusComponent,
     data: { title: 'Incident 2019 - Contact Us' }
   },
+  {
+    path: 'timeline',
+    component: TimelineComponent,
+    data: { title: 'Incident 2019 - Timeline' }
+  },
 ];
 
 
@@ -61,7 +67,8 @@ const appRoutes: Routes = [
     IcareComponent,
     SponsorsComponent,
     FooterComponent,
-    ContactusComponent
+    ContactusComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+[
+   {
+      "name": "Kite Festival 1",
+      "icon": "<i class='material-icons iblack-text'>adjust</i>",
+      "hash": "kite_fest_2",
+      "desc": "Here I am going to present to you the festival of kites that is hosted by the artist forum every year as its flagship event",
+      "time": 1546542080000,
+      "duration": 3600000,
+      "venue": "NITK Beach",
+      "category": "Beach"
+    },
+    {
+      "name": "Kite Festival 2",
+      "icon": "<i class='material-icons iblack-text'>adjust</i>",
+      "hash": "kite_fest_2",
+      "desc": "Here I am going to present to you the festival of kites that is hosted by the artist forum every year as its flagship event,Here I am going to present to you the festival of kites that is hosted by the artist forum every year as its flagship event",
+      "time": 1546542080000,
+      "duration": 3600000,
+      "venue": "NITK Beach",
+      "category": "Beach"
+    },
+    {
+      "name": "Kite Festival 3",
+      "icon": "<i class='material-icons iblack-text'>adjust</i>",
+      "hash": "kite_fest_2",
+      "desc": "Festival of Kites 1",
+      "time": 1546542080000,
+      "duration": 3600000,
+      "venue": "NITK Beach",
+      "category": "Beach"
+    }
+]

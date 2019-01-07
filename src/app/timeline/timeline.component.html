@@ -1,0 +1,54 @@
+<div *ngIf="isDevMode()">
+
+  <div class="back-circle iblue"></div>
+
+  <div class="page-title poppins iblack-text">TIMELINE</div>
+  <a href="javascript: () => { history.back(); }" class="back-link poppins iblack-text">
+    &lt; Back to Events
+  </a>
+
+<!-- <div class="events-listing row">
+  <div class="col s12 m4" *ngFor="let item of timeline">
+    <a [attr.data-target]="item.hash" class="modal-trigger poppins iblack-text iwhite">
+      <div class="icon" [innerHTML]="item.icon"></div>
+      <div *ngIf="item.time > now" class="title">{{ item.time }}</div>
+    </a>
+  </div>
+</div>
+{{ now | date:'ddMMyyyy'}}{{ now | date:'HH:mm:ss'}}
+<div *ngFor="let key of eventKeys">
+  <div *ngFor="let item of events[key]">
+    <div id="{{item.hash}}" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.desc }}</p>
+      </div>
+    </div>
+  </div>
+</div>  -->
+
+
+<div class="container">
+    <div class="col1-container" *ngFor="let item of timeline">
+        <div class="center col1" *ngIf="item.time > now">
+          <div class="event_date">{{ item.time | date:'dd' }}/{{ item.time | date:'MM' }} </div>
+          <div class="event_time">{{ item.time | date:'HH:mm' }} to {{ item.time+item.duration | date:'HH:mm' }}</div>
+        </div>
+        <div class="col2" *ngIf="item.time > now">
+          <div class="event_name">{{ item.name }}</div>
+          <div class="event_desc">{{ item.desc }}</div>
+        </div>
+     </div>
+</div>
+
+  <br /><br /><br />
+
+</div>
+
+<div *ngIf="!isDevMode()" class="events-stay-tuned mcontainer poppins iblack-text">
+  <div>
+    <h2>Coming Soon. Stay tuned...</h2>
+    <br /><br />
+    <a href="/" class="mbtn poppins iblack-text bold">RETURN TO HOME</a>
+  </div>
+</div>
