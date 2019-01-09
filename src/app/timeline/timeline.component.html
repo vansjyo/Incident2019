@@ -30,11 +30,11 @@
 
 <div class="container">
     <div class="col1-container" *ngFor="let item of timeline">
-        <div class="center col1" *ngIf="item.time > now">
+        <div class="center col1" *ngIf="item.time < now">
           <div class="event_date">{{ item.time | date:'dd' }}/{{ item.time | date:'MM' }} </div>
           <div class="event_time">{{ item.time | date:'HH:mm' }} to {{ item.time+item.duration | date:'HH:mm' }}</div>
         </div>
-        <div class="col2" *ngIf="item.time > now">
+        <div class="col2" *ngIf="item.time < now">
           <div class="event_name">{{ item.name }}</div>
           <div class="event_desc">{{ item.desc }}</div>
         </div>
