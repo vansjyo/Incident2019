@@ -28,5 +28,14 @@
       "time_end": "2011-07-16T20:43:37+0530",
       "venue": "NITK Beach",
       "category": "Beach"
+    },{
+      "name": "Kite Festival 1",
+      "icon": "<i class='material-icons iblack-text'>adjust</i>",
+      "hash": "kite_fest_2",
+      "desc": "Here I am going to present to you the festival of kites that is hosted by the artist forum every year as its flagship event",
+      "time_start": "2011-07-17T19:43:37+0530",
+      "time_end": "2011-07-17T20:43:37+0530",
+      "venue": "NITK Beach",
+      "category": "Beach"
     }
 ]
