@@ -74,18 +74,22 @@
 .col1 {
     display: table-cell;
     width: 30%;
-    border:1px solid rgba(0, 0, 0, 0.3);
+    border:1px solid #EDEDED;
 }
 .col2{
     display: table-cell;
     width: 70%;
-    border:1px solid rgba(0, 0, 0, 0.3);
+    border:1px solid #EDEDED;
+}
+.col2:hover{
+    background-color: #EDEDED;
 }
 .event_name{
     padding:20px;
     padding-bottom:0px;
     font-size: 2.5em;
     font-weight: 400;
+    color: #202124;
 }
 .event_time{
     padding:20px;

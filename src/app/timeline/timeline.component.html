@@ -15,13 +15,13 @@
   
     <a class="col s12 m4 btn iblue" (click)="display(17)">17 Jan</a>
     </div>
-    
+
     <div class="col1-container" *ngFor="let item of timeline">
-        <div class="center col1" *ngIf="getparsed(item.time_end) < now.getTime() && getparsed(item.time_end).getDate()==state">
-          <div class="event_date">{{ getparsed(item.time_start) | date:'d' }}{{ getparsed(item.time_start) | date:'MMM' }}</div>
+        <div class="center col1" *ngIf="getparsed(item.time_end) > now.getTime() && getparsed(item.time_end).getDate()==state">
+          <div class="event_date">{{ getparsed(item.time_start) | date:'d' }} {{ getparsed(item.time_start) | date:'MMM' }}</div>
           <div class="event_time">{{ getparsed(item.time_start) | date:'h'}} {{ getparsed(item.time_start) | date:'a' }} to {{ getparsed(item.time_end) | date:'h'}} {{ getparsed(item.time_end) | date:'a' }}</div>
         </div>
-        <div class="col2" *ngIf="getparsed(item.time_end) < now.getTime() && getparsed(item.time_end).getDate()==state">
+        <div class="col2" *ngIf="getparsed(item.time_end) > now.getTime() && getparsed(item.time_end).getDate()==state">
           <div class="event_name">{{ item.name }}</div>
           <div class="event_desc">{{ item.desc }}</div>
         </div>
