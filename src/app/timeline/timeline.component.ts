@@ -20,19 +20,13 @@ export class TimelineComponent implements OnInit {
   isDevMode = isDevMode;
   timeline = TIMELINE;
   getparsed(puttime){
-    return Date.parse(puttime);
+    return new Date(puttime);
   }
   constructor(private titleService: Title) {
     this.titleService.setTitle('Incident 2019 - Timeline');
+    console.log(typeof Date.parse("2011-07-14T19:43:37+0530"));
   }
-
-  
-  
-  now = Date.now();
-  now1 = new Date();
-  hey = new Date;
-  
-  
+  now = new Date()
   ngOnInit() {
     instance = this;
     instance.list = undefined;
