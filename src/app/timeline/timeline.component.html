@@ -6,7 +6,9 @@
   <a href="javascript: () => { history.back(); }" class="back-link poppins iblack-text">
     &lt; Back to Events
   </a>
-
+  hey im jeny
+ {{ now1 }}
+ {{ now }}
 <!-- <div class="events-listing row">
   <div class="col s12 m4" *ngFor="let item of timeline">
     <a [attr.data-target]="item.hash" class="modal-trigger poppins iblack-text iwhite">
@@ -26,7 +28,18 @@
     </div>
   </div>
 </div>  -->
-
+<div class="container">
+  <div class="col1-container" *ngFor="let item of timeline">
+      <div class="center col1" *ngIf="getparsed(item.time_start1) > now1 ">
+        <div class="event_date">{{ now1 | date:'dd' }}{{ now1 | date:'MMM' }} </div>
+        <div class="event_time">{{ getparsed(item.time_start1) }}{{ now1.getTime() }}</div>
+      </div>
+      <div class="col2" *ngIf="item.time < now">
+        <div class="event_name">{{ item.time_start1 | date:'dd' }}/{{ item.time_start1 | date:'MMM' }}</div>
+        <div class="event_desc">{{ item.time_start1 | date:'h:mm' }} {{ item.time_start1 | date:'a' }}</div>
+      </div>
+   </div>
+</div>
 
 <div class="container">
     <div class="col1-container" *ngFor="let item of timeline">
@@ -40,6 +53,7 @@
         </div>
      </div>
 </div>
+{{ now }}
 
   <br /><br /><br />
 

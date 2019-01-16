@@ -17,18 +17,22 @@ let instance;
 })
 export class TimelineComponent implements OnInit {
 
+  isDevMode = isDevMode;
+  timeline = TIMELINE;
+  getparsed(puttime){
+    return Date.parse(puttime);
+  }
   constructor(private titleService: Title) {
     this.titleService.setTitle('Incident 2019 - Timeline');
   }
 
-  isDevMode = isDevMode;
-  timeline = TIMELINE;
+  
+  
   now = Date.now();
-  monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"];
-
-
- 
+  now1 = new Date();
+  hey = new Date;
+  
+  
   ngOnInit() {
     instance = this;
     instance.list = undefined;
