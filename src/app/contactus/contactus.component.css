@@ -6,7 +6,7 @@
 
 @media only screen and (min-width: 700px) {
 
-    .contact-us form {
+    .contact-us form, .contact-us .contact-mobile {
         display: inline-block;
         width: 600px;
     }
