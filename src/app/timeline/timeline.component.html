@@ -9,11 +9,11 @@
 
 <div class="container">
   <div class="row">
-    <a class="col s12 m4 btn iblue" (click)="display(15)">15 Jan</a>
+    <a class="col s12 m4 btn iblue" (click)="display(15)" [ngClass]="{true: 'opacity_active', false: 'iblue'}[state == 15]">15 Jan</a>
   
-    <a class="col s12 m4 btn iblue" (click)="display(16)">16 Jan</a>
+    <a class="col s12 m4 btn iblue" (click)="display(16)" [ngClass]="{true: 'opacity_active', false: 'iblue'}[state == 16]">16 Jan</a>
   
-    <a class="col s12 m4 btn iblue" (click)="display(17)">17 Jan</a>
+    <a class="col s12 m4 btn iblue" (click)="display(17)" [ngClass]="{true: 'opacity_active', false: 'iblue'}[state == 17]">17 Jan</a>
     </div>
 
     <div class="col1-container" *ngFor="let item of timeline">

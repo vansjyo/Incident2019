@@ -4,37 +4,38 @@
       "icon": "<i class='material-icons iblack-text'>adjust</i>",
       "hash": "kite_fest_2",
       "desc": "Here I am going to present to you the festival of kites that is hosted by the artist forum every year as its flagship event",
-      "time_start": "2011-07-15T19:43:37+0530",
-      "time_end": "2011-07-15T20:43:37+0530",
+      "time_start": "2019-07-15T19:43:37+0530",
+      "time_end": "2019-07-15T20:43:37+0530",
       "venue": "NITK Beach",
       "category": "Beach"
     },
     {
-      "name": "Kite Festival 1",
+      "name": "Kite Festival 4",
       "icon": "<i class='material-icons iblack-text'>adjust</i>",
       "hash": "kite_fest_2",
       "desc": "Here I am going to present to you the festival of kites that is hosted by the artist forum every year as its flagship event",
-      "time_start": "2011-07-17T19:43:37+0530",
-      "time_end": "2011-07-17T20:43:37+0530",
+      "time_start": "2019-07-17T22:43:37+0530",
+      "time_end": "2019-07-17T23:43:37+0530",
       "venue": "NITK Beach",
       "category": "Beach"
     },
     {
-      "name": "Kite Festival 1",
+      "name": "Kite Festival 2",
       "icon": "<i class='material-icons iblack-text'>adjust</i>",
       "hash": "kite_fest_2",
       "desc": "Here I am going to present to you the festival of kites that is hosted by the artist forum every year as its flagship event",
-      "time_start": "2011-07-16T19:43:37+0530",
-      "time_end": "2011-07-16T20:43:37+0530",
+      "time_start": "2019-07-17T19:43:37+0530",
+      "time_end": "2019-07-17T20:43:37+0530",
       "venue": "NITK Beach",
       "category": "Beach"
-    },{
-      "name": "Kite Festival 1",
+    },
+    {
+      "name": "Kite Festival 3",
       "icon": "<i class='material-icons iblack-text'>adjust</i>",
       "hash": "kite_fest_2",
       "desc": "Here I am going to present to you the festival of kites that is hosted by the artist forum every year as its flagship event",
-      "time_start": "2011-07-17T19:43:37+0530",
-      "time_end": "2011-07-17T20:43:37+0530",
+      "time_start": "2019-07-16T19:43:37+0530",
+      "time_end": "2019-07-16T20:43:37+0530",
       "venue": "NITK Beach",
       "category": "Beach"
     }

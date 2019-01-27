@@ -9,6 +9,9 @@
 .iblue {
     background-color: #002D54;
 }
+.opacity_active{
+    opacity: 0.7;
+}
 .events-listing {
     margin: 4% 176px 0 176px !important;
     width: calc(100% - 352px);
